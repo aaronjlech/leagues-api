@@ -1,12 +1,7 @@
-console.log('Hello World!');
 import React from 'react';
+import Backbone from 'backbone';
 import ReactDOM from 'react-dom';
-import Counter from './Counter';
+import ACTIONS from './actions.js';
+ACTIONS.allChamps();
 
-document.addEventListener('DOMContentLoaded', function() {
-  ReactDOM.render(
-    React.createElement(Counter),
-    document.getElementById('app-container')
-  );
-});
-console.log("whhattt")
+ReactDOM.render(<h1>Hello</h1>, document.querySelector('#app-container'))
